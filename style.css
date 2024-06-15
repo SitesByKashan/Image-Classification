@@ -1,0 +1,198 @@
+/* Basic styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.start-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #218838;
+}
+
+.webcam-container {
+    margin: 20px auto;
+    border: 2px solid #007bff;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.label-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.prediction {
+    background-color: #f0f4f8;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-text {
+    margin-bottom: 5px;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.bar {
+    height: 20px;
+    background-color: #007bff;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries */
+@media (min-width: 576px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .start-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .webcam-container {
+        max-width: 300px;
+    }
+
+    .image-gallery img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    .webcam-container {
+        max-width: 400px;
+    }
+
+    .image-gallery img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .webcam-container {
+        max-width: 500px;
+    }
+
+    .image-gallery img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header h1 {
+        font-size: 3.5rem;
+    }
+
+    .content h2 {
+        font-size: 2.2rem;
+    }
+
+    .webcam-container {
+        max-width: 600px;
+    }
+
+    .image-gallery img {
+        width: 200px;
+        height: 200px;
+    }
+}
